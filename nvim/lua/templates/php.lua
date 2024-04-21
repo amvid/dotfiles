@@ -11,7 +11,7 @@ declare(strict_types=1);
 
 namespace ]] .. updated_path .. [[;
 
-class ]] .. string.gsub(filename, ".php", "") .. [[ {
+class ]] .. string.gsub(filename, ".php", "") .. [[\n{
 
 }]]
 end
