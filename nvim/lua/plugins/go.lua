@@ -70,10 +70,8 @@ return {
     "jay-babu/mason-null-ls.nvim",
     optional = true,
     opts = function(_, opts)
-      opts.ensure_installed = require("astrocore").list_insert_unique(
-        opts.ensure_installed,
-        { "gomodifytags", "gofumpt", "iferr", "impl", "goimports" }
-      )
+      opts.ensure_installed =
+        require("astrocore").list_insert_unique(opts.ensure_installed, { "gomodifytags", "iferr", "impl", "gotests" })
     end,
   },
   {
@@ -89,7 +87,7 @@ return {
     opts = function(_, opts)
       opts.ensure_installed = require("astrocore").list_insert_unique(
         opts.ensure_installed,
-        { "delve", "gopls", "gomodifytags", "gofumpt", "iferr", "impl", "goimports" }
+        { "delve", "gopls", "gomodifytags", "gotests", "iferr", "impl" }
       )
     end,
   },
@@ -109,18 +107,20 @@ return {
     opts = {},
   },
   {
-    "ray-x/go.nvim",
+    "olexsmir/gopher.nvim",
+    ft = "go",
+    build = function()
+      if not require("lazy.core.config").spec.plugins["mason.nvim"] then
+        vim.print "Installing go dependencies..."
+        vim.cmd.GoInstallDeps()
+      end
+    end,
     dependencies = {
-      "ray-x/guihua.lua",
-      "neovim/nvim-lspconfig",
+      "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
+      { "williamboman/mason.nvim", optional = true }, -- by default use Mason for go dependencies
     },
-    opts = {
-      disable_defaults = true,
-    },
-    event = { "CmdlineEnter" },
-    ft = { "go", "gomod" },
-    build = ':lua require("go.install").update_all_sync()',
+    opts = {},
   },
   {
     "nvim-neotest/neotest",
