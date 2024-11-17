@@ -16,6 +16,7 @@
   "cmp-tailwind-colors": { "branch": "main", "commit": "91b2621827ef19a374ad7d1e60d567dd2e4b3823" },
   "cmp_luasnip": { "branch": "master", "commit": "98d9cb5c2c38532bd9bdb481067b20fea8f32e90" },
   "dressing.nvim": { "branch": "master", "commit": "43b8f74e0b1e3f41e51f640f8efa3bcd401cea0d" },
+  "edgedb-vim": { "branch": "master", "commit": "7f2516bec3a5ad137347fb703d0b2c88f1478f5b" },
   "flutter-tools.nvim": { "branch": "main", "commit": "fb976f0e83296d011be95701085ff4711a89de94" },
   "friendly-snippets": { "branch": "main", "commit": "de8fce94985873666bd9712ea3e49ee17aadb1ed" },
   "git-blame.nvim": { "branch": "master", "commit": "2883a7460f611c2705b23f12d58d398d5ce6ec00" },
