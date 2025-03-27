@@ -12,7 +12,36 @@
   },
   "languages": {
     "PHP": {
-      "language_servers": ["intelephense"]
+      "language_servers": [
+        "intelephense"
+      ]
+    },
+    "TypeScript": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
+    },
+    "TSX": {
+      "language_servers": [
+        "deno",
+        "!typescript-language-server",
+        "!vtsls",
+        "!eslint"
+      ],
+      "formatter": "language_server"
+    }
+  },
+  "lsp": {
+    "deno": {
+      "settings": {
+        "deno": {
+          "enable": true
+        }
+      }
     }
   }
 }
