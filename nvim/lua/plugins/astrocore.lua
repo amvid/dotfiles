@@ -80,6 +80,16 @@ return {
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
       },
+      v = {
+        ["<C-r>"] = { '"hy:%s/<C-r>h//g<left><left>', desc = "Replace all" },
+      },
+      i = {
+        ["<C-h>"] = { "<Left>" },
+        ["<C-j>"] = { "<Down>" },
+        ["<C-k>"] = { "<Up>" },
+        ["<C-l>"] = { "<Right>" },
+        ["<C-s>"] = { "<Esc>:w<CR>a", desc = "Exit insert mode and save" },
+      },
     },
   },
 }
