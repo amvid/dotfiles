@@ -15,5 +15,14 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "php",
+  callback = function()
+    vim.bo.shiftwidth = 4
+    vim.bo.tabstop = 4
+    vim.bo.expandtab = true
+  end,
+})
+
 require "lazy_setup"
 require "polish"
