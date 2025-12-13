@@ -12,7 +12,7 @@ return {
 
           local prefix = "<Leader>g"
 
-          maps.n[prefix .. "d"] = {
+          maps.n[prefix .. "D"] = {
             function() require("lazydocker").open() end,
             desc = "ToggleTerm LazyDocker",
           }
