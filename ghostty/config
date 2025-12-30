@@ -1,5 +1,4 @@
 theme = Abernathy
 font-family = "JetBrainsMonoNL Nerd Font"
 font-thicken = true
-font-size = 13
-font-feature = -liga
+font-size = 11
