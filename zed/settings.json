@@ -1,32 +1,50 @@
 {
-  "base_keymap": "JetBrains",
+  "git_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "icon_theme": "Material Icon Theme",
+  "project_panel": {
+    "dock": "left",
+  },
+  "base_keymap": "VSCode",
   "ui_font_size": 13,
-  "buffer_font_size": 12,
+  "buffer_font_size": 11,
   "terminal": {
-    "font_size": 12
+    "font_size": 11,
   },
   "vim_mode": false,
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Ayu Dark"
+    "light": "Ayu Dark",
+    "dark": "GitHub Dark Default",
   },
   "languages": {
     "PHP": {
-      "language_servers": ["intelephense"]
+      "language_servers": ["intelephense"],
     },
     "TypeScript": {
       "language_servers": ["!typescript-language-server", "!vtsls", "!eslint"],
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "TSX": {
       "language_servers": [
         "deno",
         "!typescript-language-server",
         "!vtsls",
-        "!eslint"
+        "!eslint",
       ],
-      "formatter": "language_server"
-    }
-  }
+      "formatter": "language_server",
+    },
+  },
 }

@@ -1,5 +1,6 @@
 btop
 configstore
+cagent
 fish
 flutter
 github-copilot
@@ -8,6 +9,7 @@ iterm2
 jgit
 zed/embeddings
 zed/prompts
+intelephense
 cursor/User/History
 cursor/User/globalStorage
 cursor/User/workspaceStorage
