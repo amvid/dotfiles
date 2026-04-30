@@ -25,8 +25,8 @@
   },
   "vim_mode": false,
   "theme": {
-    "mode": "system",
-    "light": "Ayu Dark",
+    "mode": "dark",
+    "light": "GitHub Dark Default",
     "dark": "GitHub Dark Default",
   },
   "languages": {
