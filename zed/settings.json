@@ -1,4 +1,7 @@
 {
+  "edit_predictions": {
+    "provider": "zed"
+  },
   "git_panel": {
     "dock": "left",
   },
@@ -13,7 +16,11 @@
       "type": "registry",
     },
   },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": {
+    "mode": "light",
+    "light": "JetBrains New UI Icons (Dark)",
+    "dark": "Material Icon Theme"
+  },
   "project_panel": {
     "dock": "left",
   },
@@ -27,7 +34,7 @@
   "theme": {
     "mode": "dark",
     "light": "GitHub Dark Default",
-    "dark": "GitHub Dark Default",
+    "dark": "Vercel Dark",
   },
   "languages": {
     "PHP": {
