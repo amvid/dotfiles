@@ -82,5 +82,10 @@
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-j": "workspace::ActivatePaneDown"
     }
+  },
+  {
+    "bindings": {
+      "cmd-s": "workspace::FormatAndSave"
+    }
   }
 ]

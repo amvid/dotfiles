@@ -1,6 +1,7 @@
 {
+  "cli_default_open_behavior": "new_window",
   "edit_predictions": {
-    "provider": "zed"
+    "provider": "zed",
   },
   "git_panel": {
     "dock": "left",
@@ -17,9 +18,9 @@
     },
   },
   "icon_theme": {
-    "mode": "light",
+    "mode": "dark",
     "light": "JetBrains New UI Icons (Dark)",
-    "dark": "Material Icon Theme"
+    "dark": "JetBrains New UI Icons (Dark)",
   },
   "project_panel": {
     "dock": "left",
@@ -31,23 +32,19 @@
     "font_size": 11,
   },
   "vim_mode": false,
-  "theme": {
-    "mode": "dark",
-    "light": "GitHub Dark Default",
-    "dark": "Vercel Dark",
-  },
+  "theme": "Vercel Dark",
   "languages": {
     "PHP": {
       "language_servers": ["intelephense"],
     },
     "TypeScript": {
-      "language_servers": ["!typescript-language-server", "!vtsls", "!eslint"],
+      "language_servers": ["typescript-language-server", "!vtsls", "!eslint"],
       "formatter": "language_server",
     },
     "TSX": {
       "language_servers": [
-        "deno",
-        "!typescript-language-server",
+        "!deno",
+        "typescript-language-server",
         "!vtsls",
         "!eslint",
       ],
